@@ -120,7 +120,7 @@
     <div class="header-middle">
         <div class="container">
             <div class="row align-items-center">
-                {{-- <div class="col-lg-3 col-md-3 col-7"> modified on 04.01.2023
+                {{-- <div class="col-lg-3 col-md-3 col-7"> modified on 04.02.2023
 
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="{{ asset('/') }}website/assets/images/logo/logo.svg" alt="Logo">
