@@ -27,9 +27,5 @@ php artisan db:seed
 
 php artisan serve
 
-## Add Cart package
-https://github.com/darryldecode/laravelshoppingcart
-
-
 ## License
 
