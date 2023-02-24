@@ -20,6 +20,12 @@ class EcommerceController extends Controller
             'products' => Product::where('category_id', $id)->orderBy('id', 'desc')->get(),
         ]);
     }
+    public function subCategory($id)
+    {
+        return view('website.category.index', [
+            'products' => Product::where('sub_category_id', $id)->orderBy('id', 'desc')->get(),
+        ]);
+    }
     public function detail($id)
     {
         return view('website.detail.index',[

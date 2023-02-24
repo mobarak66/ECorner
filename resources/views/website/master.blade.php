@@ -232,9 +232,8 @@
                             @foreach ($categories as $category)
                             <li><a href="{{ route('category',['id' =>$category->id]) }}">{{ $category->name }} <i class="lni lni-chevron-right"></i></a>
                                 <ul class="inner-sub-category">
-                                    @foreach ($category->subCategories as $subCategory)
-                                        
-                                    <li><a href="product-grids.html">{{ $subCategory->name }}</a></li>                                    
+                                    @foreach ($category->subCategories as $subCategory)                                        
+                                    <li><a href="{{ route('sub-category',['id' => $subCategory->id]) }}">{{ $subCategory->name }}</a></li>                                    
                                     @endforeach
                                 </ul>
                             </li>                            

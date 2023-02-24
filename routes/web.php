@@ -29,6 +29,7 @@ use App\Http\Controllers\AdminOrderController;
 
 Route::get('/',[EcommerceController::class,'index'])->name('home');
 Route::get('/product-category/{id}',[EcommerceController::class,'category'])->name('category');
+Route::get('/product-sub-category/{id}',[EcommerceController::class,'subCategory'])->name('sub-category');
 Route::get('/product-detail/{id}',[EcommerceController::class,'detail'])->name('detail');
 Route::post('/cart/add-item/{id}', [CartController::class, 'index'])->name('cart.add');
 Route::get('/cart/show-item',[CartController::class,'show'])->name('cart.show');
