@@ -128,7 +128,7 @@
 
                 </div> --}}
                 <div class="col-lg-3 d-none d-lg-block">
-                    <a href="" class="text-decoration-none">
+                    <a href="{{ route('home') }}" class="text-decoration-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Corner</h1>
                     </a>
                 </div>
@@ -251,7 +251,7 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="index.html" class="active" aria-label="Toggle navigation">Home</a>
+                                    <a href="{{ route('home') }}" class="active" aria-label="Toggle navigation">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
@@ -260,8 +260,8 @@
                                     <ul class="sub-menu collapse" id="submenu-1-2">
                                         <li class="nav-item"><a href="about-us.html">About Us</a></li>
                                         <li class="nav-item"><a href="faq.html">Faq</a></li>
-                                        <li class="nav-item"><a href="login.html">Login</a></li>
-                                        <li class="nav-item"><a href="register.html">Register</a></li>
+                                        <li class="nav-item"><a href="{{ route('customer.login') }}">Login</a></li>
+                                        <li class="nav-item"><a href="{{ route('customer.register') }}">Register</a></li>
                                         <li class="nav-item"><a href="mail-success.html">Mail Success</a></li>
                                         <li class="nav-item"><a href="404.html">404 Error</a></li>
                                     </ul>
@@ -271,11 +271,10 @@
                                         data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent"
                                         aria-expanded="false" aria-label="Toggle navigation">Shop</a>
                                     <ul class="sub-menu collapse" id="submenu-1-3">
-                                        <li class="nav-item"><a href="product-grids.html">Shop Grid</a></li>
                                         <li class="nav-item"><a href="product-list.html">Shop List</a></li>
                                         <li class="nav-item"><a href="product-details.html">shop Single</a></li>
-                                        <li class="nav-item"><a href="">Cart</a></li>
-                                        <li class="nav-item"><a href="checkout.html">Checkout</a></li>
+                                        <li class="nav-item"><a href="{{ route('cart.show') }}">Cart</a></li>
+                                        <li class="nav-item"><a href="{{ route('checkout')}}">Checkout</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
